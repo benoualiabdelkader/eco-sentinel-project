@@ -6,5 +6,4 @@ eco_results.txt
 results_summary.txt
 *_surface.png
 *_cm.png
-eco_sentinel_dataset.csv
-dataset.csv
+# dataset.csv (optional: uncomment if you don't want to upload large data)
