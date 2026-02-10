@@ -177,8 +177,9 @@ else:
             تم اختيار هذا النموذج لقدرته العالية على التمييز بين البيانات غير الخطية المعقدة.
             """)
             
-            # عرض مصفوفة الارتباط
-            corr = df.corr()
+            # عرض مصفوفة الارتباط (فقط للأعمدة الرقمية لتجنب الخطأ)
+            numeric_df = df.select_dtypes(include=[np.number])
+            corr = numeric_df.corr()
             fig_corr, ax_corr = plt.subplots()
             sns.heatmap(corr, annot=True, cmap='coolwarm', ax=ax_corr)
             st.write("مصفوفة الارتباط بين الخصائص:")
