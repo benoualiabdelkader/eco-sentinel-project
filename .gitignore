@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+eco_results.txt
+results_summary.txt
+*_surface.png
+*_cm.png
+eco_sentinel_dataset.csv
+dataset.csv
